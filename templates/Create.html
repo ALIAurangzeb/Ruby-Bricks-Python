@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css')}}">    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/flaticon.css')}}">    
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <title>Create</title>
+        
+    </head>
+    <body>
+
+        <div class="container mt-4">
+            <form method="POST" action="Create" enctype="multipart/form-data">
+                <div class="form-group">      
+                  <input type="number"  name = "Ar" class="form-control" placeholder="Area">      
+                </div>
+                <div class="form-group">      
+                    <input type="number"  name = "Bd" class="form-control" placeholder="Bed Rooms">      
+                  </div>
+                  <div class="form-group">      
+                    <input type="number"  name = "Br" class="form-control" placeholder="Bath Rooms">      
+                  </div>
+                  <div class="form-group">      
+                    <input type="text"  name = "Des" class="form-control" placeholder="Description">      
+                  </div>
+                  <div class="form-group">      
+                    <input type="number"  name = "Fur" class="form-control" placeholder="Furnished">      
+                  </div>
+                  <div class="form-group">      
+                    <input type="number"  name = "Pc" class="form-control" placeholder="Post Code">      
+                  </div>
+                  <div class="form-group">      
+                    <input type="number"  name = "Gar" class="form-control" placeholder="Garage">      
+                  </div>
+                  <div class="form-group">      
+                    <input type="number"  name = "St" class="form-control" placeholder="Stories">      
+                  </div>
+                  <div class="form-group">      
+                    <input type="text"  name = "Pt" class="form-control" placeholder="Property Type">      
+                  </div>
+                  <div class="form-group">      
+                    <input type="number"  name = "Yb" class="form-control" placeholder="Year Build">      
+                  </div>
+                  <div class="form-group">
+                    <input type="text"  name = "Pf" class="form-control" placeholder="Property For">   
+                  </div>
+                  <div class="form-group">
+                    <input type="text"  name = "Pl" class="form-control" placeholder="Place">   
+                  </div>
+                  <div class="form-group">
+                    <input type="text"  name = "Hn" class="form-control" placeholder="House Name">   
+                  </div>            
+                
+                <div class="form-group">      
+                  <input type="file" name = "picture">
+                </div>            
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+            </div>
+
+
+
+    </body>
